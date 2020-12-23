@@ -214,9 +214,9 @@ class AppManager:
                     self.paramMobileNetSSD)
 
             elif self.model == 'Darknet-YOLOv3':
-                self.paramYolo = dict(labels='models/DarkNet/coco.names',
-                                      modelCfg="models/DarkNet/yolov3.cfg",
-                                      modelWeights="models/DarkNet/yolov3.weights",
+                self.paramYolo = dict(labels='coco.names',
+                                      modelCfg="yolov3.cfg",
+                                      modelWeights="yolov3.weights",
                                       confThresh=self.guiParam['confThresh'],
                                       nmsThresh=self.guiParam['nmsThresh'])
 
